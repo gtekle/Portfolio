@@ -8,10 +8,6 @@ html {
   font-size: 16px;
 }
 
-h2 {
-  font-size: 3rem;
-}
-
 body {
   margin: 0;
   background-color: #f7f7f9;
@@ -50,25 +46,26 @@ img {
   flex-direction: column;
   background-image: url("./img/header-shapes-mobile.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 700px;
+  background-size: 100% 100%;
+  min-height: 604px;
   background-color: #fff;
   justify-content: center;
-  padding-top: 3rem;
 }
 
 .headline--title {
+  color: #172b4d;
   margin: 0 24px;
   font-weight: 700;
-  font-size: 2.5rem;
-  line-height: 3.25rem;
+  font-size: 40px;
+  line-height: 52px;
 }
 
 .headline--body {
+  color: #344563;
   margin: 12px 24px;
   font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .headline--supporting-text {
@@ -88,4 +85,9 @@ img {
 
 .headline .social-media-items {
   margin-right: 20px;
+}
+
+.social-media i {
+  color: #505f79;
+  font-size: 20px;
 }
