@@ -3,3 +3,31 @@
 *::after {
   box-sizing: border-box;
 }
+
+.body {
+  background-color: #f7f7f9;
+  font-size: 1rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+.container {
+  display: flex;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.toolbar {
+  color: #6070ff;
+}
+
+.toolbar .container {
+  justify-content: space-between;
+  align-items: center;
+}
