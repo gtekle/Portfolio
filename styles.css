@@ -8,16 +8,14 @@ html {
 }
 
 body {
+  margin: 0;
   background-color: #f7f7f9;
   font-size: 1rem;
+  font-family: "Poppins", sans-serif;
 }
 
 img {
   max-width: 100%;
-}
-
-h2 {
-  font-size: 3rem;
 }
 
 .container {
@@ -32,7 +30,15 @@ h2 {
 
 .toolbar .container {
   justify-content: space-between;
+  padding: 0 1.5rem;
   align-items: center;
+  background-color: #fff;
+}
+
+.toolbar .logo {
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.25rem;
 }
 
 .headline .container {
@@ -43,21 +49,29 @@ h2 {
   min-height: 700px;
   background-color: #fff;
   justify-content: center;
-  margin-top: 92px;
+  padding-top: 3rem;
 }
 
 .headline--title {
   margin: 0 24px;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3.25rem;
 }
 
 .headline--body {
   margin: 12px 24px;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .headline--supporting-text {
   margin: 0 24px;
   text-transform: uppercase;
   color: #7f8cff;
+  font-size: 1rem;
+  line-height: 1.5rem;
   font-weight: 500;
 }
 
