@@ -3,8 +3,11 @@
 *::after {
   box-sizing: border-box;
 }
+html {
+  font-size: 16px;
+}
 
-.body {
+body {
   background-color: #f7f7f9;
   font-size: 1rem;
 }
@@ -30,4 +33,40 @@ h2 {
 .toolbar .container {
   justify-content: space-between;
   align-items: center;
+}
+
+.headline .container {
+  flex-direction: column;
+  background-image: url("./img/header-shapes-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 700px;
+  background-color: #fff;
+  justify-content: center;
+  margin-top: 92px;
+}
+
+.headline--title {
+  margin: 0 24px;
+}
+
+.headline--body {
+  margin: 12px 24px;
+}
+
+.headline--supporting-text {
+  margin: 0 24px;
+  text-transform: uppercase;
+  color: #7f8cff;
+  font-weight: 500;
+}
+
+.headline .social-media {
+  margin: 12px 24px;
+  display: flex;
+  align-items: center;
+}
+
+.headline .social-media-items {
+  margin-right: 20px;
 }
