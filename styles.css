@@ -1,0 +1,98 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  background-color: #f7f7f9;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  display: flex;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.toolbar {
+  color: #6070ff;
+}
+
+.toolbar .container {
+  justify-content: space-between;
+  padding: 10px 24px;
+  align-items: center;
+  background-color: #fff;
+}
+
+.logo a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.headline .container {
+  flex-direction: column;
+  background-image: url("./img/header-shapes-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 604px;
+  background-color: #fff;
+  justify-content: center;
+}
+
+.headline--title {
+  color: #172b4d;
+  margin: 0 24px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.headline--body {
+  color: #344563;
+  margin: 12px 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.headline--supporting-text {
+  margin: 0 24px;
+  text-transform: uppercase;
+  color: #7f8cff;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+}
+
+.headline .social-media {
+  display: flex;
+  margin: 12px 24px;
+  align-items: center;
+  padding: 0;
+}
+
+.headline .social-media-items {
+  margin-right: 20px;
+}
+
+.social-media li {
+  list-style: none;
+}
+
+.social-media i {
+  color: #505f79;
+  font-size: 20px;
+}
