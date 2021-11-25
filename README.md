@@ -4,52 +4,31 @@
 
 > My portfolio project.
 
-![screenshot](./app_screenshot.png)
+![screenshot](./img/portfolio-screenshot.png)
 
-Additional description about the project and its features.
+This is project will evolve into becoming my portfolio as the course progresses.
 
 ## Built With
 
 - HTML and CSS
-- Frameworks
-- Technologies used
+
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](#)
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+-Install Node.js
+-Install text editor of your choice (eg. VS Code)
 
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
 
 ## Authors
 
-👤 **Author1**
+👤 **Tekle G**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/gtekle)
+- LinkedIn: [LinkedIn](www.linkedin.com/in/tekle-gebreyohannes-kidanemariam-7605752b)
 
 ## 🤝 Contributing
 
@@ -63,9 +42,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Microverse Inc
 
 ## 📝 License
 
