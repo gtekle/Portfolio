@@ -10,7 +10,7 @@ html {
 
 body {
   margin: 0;
-  background-color: #f7f7f9;
+  background-color: #e5e5e5;
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
 }
@@ -20,13 +20,75 @@ img {
 }
 
 .container {
-  display: flex;
   max-width: 480px;
   margin: 0 auto;
 }
 
+.flex-container {
+  display: flex;
+}
+
+.grid-container {
+  display: grid;
+}
+
+.counter {
+  height: 8px;
+  width: 8px;
+  background-color: #c1c7d0;
+  border-radius: 50%;
+  display: block;
+}
+
+.btn {
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 600;
+  font-style: normal;
+  color: #6070ff;
+  border: 1px solid #7f8cff;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #fff;
+  box-shadow: 0 8px 16px 0 rgba(64, 83, 252, 24%);
+  border: 1px solid #4053fc;
+  background-color: #6070ff;
+}
+
+.btn:active {
+  color: #fff;
+  background-color: #2230d2;
+}
+
+.btn:disabled {
+  color: #5e6c84;
+  border-color: #c1c7d0;
+  background-color: #fff;
+  cursor: not-allowed;
+}
+
+.section-title {
+  color: #344563;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
 .toolbar {
   color: #6070ff;
+}
+
+.header-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f7f9;
 }
 
 .toolbar .container {
@@ -36,20 +98,28 @@ img {
   background-color: #fff;
 }
 
+.logo {
+  padding: 10px 12px;
+}
+
 .logo a {
   text-decoration: none;
+  font-style: normal;
   font-weight: 700;
   font-size: 18px;
+  line-height: 20px;
+  color: #6070ff;
 }
 
 .headline .container {
   flex-direction: column;
+  justify-content: center;
   background-image: url("./img/header-shapes-mobile.png");
+  border-radius: 0 0 0 120px;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   min-height: 604px;
   background-color: #fff;
-  justify-content: center;
 }
 
 .headline--title {
@@ -69,7 +139,7 @@ img {
 }
 
 .headline--supporting-text {
-  margin: 0 24px;
+  margin: 12px 24px;
   text-transform: uppercase;
   color: #7f8cff;
   font-size: 1rem;
@@ -77,14 +147,14 @@ img {
   font-weight: 500;
 }
 
-.headline .social-media {
+.social-media {
   display: flex;
   margin: 12px 24px;
   align-items: center;
   padding: 0;
 }
 
-.headline .social-media-items {
+.social-media-items {
   margin-right: 20px;
 }
 
@@ -95,4 +165,240 @@ img {
 .social-media i {
   color: #505f79;
   font-size: 20px;
+}
+
+.works .grid-container {
+  grid-template-columns: auto;
+  background-color: #f7f7f9;
+  padding: 67px 24px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 44px 0;
+  border-radius: 15px;
+  padding: 16px;
+  background-color: #fff;
+  outline: 1px solid #dfe1e6;
+}
+
+.card > * {
+  flex: 1 1 100%;
+  margin: 10px 0;
+}
+
+.card .project-snapshoot img {
+  text-align: center;
+  width: 100%;
+}
+
+.card .project-title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  color: #172b4d;
+  padding: 0;
+}
+
+.card .project-metadata {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.card .project-metadata li {
+  margin-right: 20px;
+}
+
+.card .project-metadata .client {
+  color: #344563;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.card .project-metadata .role,
+.year {
+  color: #7a869a;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  text-transform: capitalize;
+}
+
+.card .project-metadata > * {
+  margin-right: 10px;
+}
+
+.card .project-description {
+  color: #344563;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.card .languages {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.card .languages li {
+  font-size: 13px;
+  color: #6070ff;
+  line-height: 16px;
+  font-weight: 500;
+  background-color: #ebebff;
+  margin-right: 10px;
+  padding: 0.1em 0.4em;
+  border-radius: 10px;
+}
+
+.card .btn-see-project {
+  align-self: flex-start;
+}
+
+.about-me-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f7f9;
+}
+
+.about-me-container {
+  display: flex;
+  flex-direction: column;
+  background-image: url("./img/base-about-me.png.png");
+  border-radius: 0 80px 0 0;
+  background-color: #f7f7f9;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 67px 24px;
+}
+
+hr {
+  line-height: 1px;
+  background-color: #dfe1e6;
+}
+
+.about-me-title {
+  color: #172b4d;
+  margin: 6px 0;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.about-me-body {
+  color: #344563;
+  margin: 6px 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.about-me-suporting-text {
+  margin: 12px 0;
+  text-transform: uppercase;
+  color: #7f8cff;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+}
+
+.about-me-container .social-media {
+  margin: 12px 0;
+}
+
+.about-me-container .btn-get-my-resume {
+  align-self: flex-start;
+  margin: 12px 0;
+}
+
+.programming-languages {
+  margin: 6px 0;
+}
+
+.programming-languages .language-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.language-head .languages-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.programming-languages .language-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+
+.programming-languages .language-list li {
+  background-color: #f7f7f9;
+  margin: 6px 0;
+}
+
+.programming-languages .language-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.programming-languages .language-item .language-icon {
+  margin-right: 16px;
+}
+
+.programming-languages .language-item .language-name {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  font-style: normal;
+  color: #253858;
+}
+
+.frameworks {
+  margin: 6px 0;
+}
+
+.frameworks .frameworks-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.framewors-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.skills {
+  margin: 6px 0;
+}
+
+.skills .skills-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skills-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  font-style: normal;
 }
