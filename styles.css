@@ -113,14 +113,13 @@ img {
   font-weight: 500;
 }
 
-.headline .social-media {
+.social-media {
   display: flex;
   margin: 12px 24px;
   align-items: center;
   padding: 0;
 }
-
-.headline .social-media-items {
+.social-media-items {
   margin-right: 20px;
 }
 
@@ -136,7 +135,7 @@ img {
 .works .grid-container {
   grid-template-columns: auto;
   background-color: #f7f7f9;
-  padding: 114px 24px;
+  padding: 67px 24px;
 }
 
 .card {
@@ -238,4 +237,150 @@ img {
   padding: 8px;
   border-radius: 5px;
   letter-spacing: 0.03em;
+}
+
+.about-me-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f7f9;
+}
+
+.about-me-container {
+  display: flex;
+  flex-direction: column;
+  background-image: url("./img/base-about-me.png.png");
+  border-radius: 0 80px 0 0;
+  background-color: #f7f7f9;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 67px 24px;
+}
+
+hr {
+  line-height: 1px;
+  background-color: #dfe1e6;
+}
+
+.about-me-title {
+  color: #172b4d;
+  margin: 6px 0;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.about-me-body {
+  color: #344563;
+  margin: 6px 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.about-me-suporting-text {
+  margin: 6px 0;
+  text-transform: uppercase;
+  color: #7f8cff;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+}
+
+.about-me-container .social-media {
+  margin: 6px 0;
+}
+
+.about-me-container .btn-get-my-resume {
+  align-self: flex-start;
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #396df2;
+  outline: 1px solid #dfe1e6;
+  padding: 8px;
+  border-radius: 5px;
+  letter-spacing: 0.03em;
+}
+
+.programming-languages {
+  margin: 6px 0;
+}
+
+.programming-languages .language-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.language-head .languages-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.programming-languages .language-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+
+.programming-languages .language-list li {
+  background-color: #f7f7f9;
+  margin: 6px 0;
+}
+
+.programming-languages .language-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.programming-languages .language-item .language-icon {
+  margin-right: 16px;
+}
+
+.programming-languages .language-item .language-name {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  font-style: normal;
+  color: #253858;
+}
+
+.frameworks {
+  margin: 6px 0;
+}
+
+.frameworks .frameworks-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.framewors-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.skills {
+  margin: 6px 0;
+}
+
+.skills .skills-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skills-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  font-style: normal;
 }
