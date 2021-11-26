@@ -10,7 +10,7 @@ html {
 
 body {
   margin: 0;
-  background-color: #f7f7f9;
+  background-color: #e5e5e5;
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
 }
@@ -20,13 +20,34 @@ img {
 }
 
 .container {
-  display: flex;
   max-width: 480px;
   margin: 0 auto;
 }
 
+.flex-container {
+  display: flex;
+}
+
+.grid-container {
+  display: grid;
+}
+
+.counter {
+  height: 8px;
+  width: 8px;
+  background-color: #c1c7d0;
+  border-radius: 50%;
+  display: block;
+}
+
 .toolbar {
   color: #6070ff;
+}
+
+.header-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f7f9;
 }
 
 .toolbar .container {
@@ -35,21 +56,28 @@ img {
   align-items: center;
   background-color: #fff;
 }
+.logo {
+  padding: 10px 12px;
+}
 
 .logo a {
   text-decoration: none;
+  font-style: normal;
   font-weight: 700;
   font-size: 18px;
+  line-height: 20px;
+  color: #6070ff;
 }
 
 .headline .container {
   flex-direction: column;
+  justify-content: center;
   background-image: url("./img/header-shapes-mobile.png");
+  border-radius: 0 0 0 120px;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   min-height: 604px;
   background-color: #fff;
-  justify-content: center;
 }
 
 .headline--title {
@@ -95,4 +123,111 @@ img {
 .social-media i {
   color: #505f79;
   font-size: 20px;
+}
+
+.works .grid-container {
+  grid-template-columns: auto;
+  background-color: #f7f7f9;
+  padding: 114px 24px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 44px 0;
+  border-radius: 15px;
+  padding: 16px;
+  background-color: #fff;
+  outline: 1px solid #dfe1e6;
+}
+
+.card > * {
+  flex: 1 1 100%;
+  margin: 10px 0;
+}
+
+.card .project-snapshoot img {
+  text-align: center;
+  width: 100%;
+}
+
+.card .project-title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  color: #172b4d;
+  padding: 0;
+}
+
+.card .project-metadata {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.card .project-metadata li {
+  margin-right: 20px;
+}
+
+.card .project-metadata .client {
+  color: #344563;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.card .project-metadata .role,
+.year {
+  color: #7a869a;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  text-transform: capitalize;
+}
+
+.card .project-metadata > * {
+  margin-right: 10px;
+}
+
+.card .project-description {
+  color: #344563;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.card .languages {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.card .languages li {
+  font-size: 13px;
+  color: #6070ff;
+  line-height: 16px;
+  font-weight: 500;
+  background-color: #ebebff;
+  margin-right: 10px;
+  padding: 0.1em 0.4em;
+  border-radius: 10px;
+}
+
+.card .btn-see-project {
+  align-self: flex-start;
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #396df2;
+  outline: 1px solid #dfe1e6;
+  padding: 8px;
+  border-radius: 5px;
+  letter-spacing: 0.03em;
 }
