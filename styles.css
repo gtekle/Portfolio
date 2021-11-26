@@ -40,11 +40,45 @@ img {
   display: block;
 }
 
+.btn {
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 600;
+  font-style: normal;
+  color: #6070ff;
+  border: 1px solid #7f8cff;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #fff;
+  box-shadow: 0 8px 16px 0 rgba(64, 83, 252, 24%);
+  border: 1px solid #4053fc;
+  background-color: #6070ff;
+}
+
+.btn:active {
+  color: #fff;
+  background-color: #2230d2;
+}
+
+.btn:disabled {
+  color: #5e6c84;
+  border-color: #c1c7d0;
+  background-color: #fff;
+  cursor: not-allowed;
+}
+
 .section-title {
   color: #344563;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 40px;
   line-height: 24px;
+  text-transform: uppercase;
 }
 
 .toolbar {
@@ -105,7 +139,7 @@ img {
 }
 
 .headline--supporting-text {
-  margin: 0 24px;
+  margin: 12px 24px;
   text-transform: uppercase;
   color: #7f8cff;
   font-size: 1rem;
@@ -229,15 +263,6 @@ img {
 
 .card .btn-see-project {
   align-self: flex-start;
-  text-decoration: none;
-  font-size: 17px;
-  line-height: 24px;
-  font-weight: 500;
-  color: #396df2;
-  outline: 1px solid #dfe1e6;
-  padding: 8px;
-  border-radius: 5px;
-  letter-spacing: 0.03em;
 }
 
 .about-me-wrapper {
@@ -279,7 +304,7 @@ hr {
 }
 
 .about-me-suporting-text {
-  margin: 6px 0;
+  margin: 12px 0;
   text-transform: uppercase;
   color: #7f8cff;
   font-size: 1rem;
@@ -288,20 +313,12 @@ hr {
 }
 
 .about-me-container .social-media {
-  margin: 6px 0;
+  margin: 12px 0;
 }
 
 .about-me-container .btn-get-my-resume {
   align-self: flex-start;
-  text-decoration: none;
-  font-size: 17px;
-  line-height: 24px;
-  font-weight: 500;
-  color: #396df2;
-  outline: 1px solid #dfe1e6;
-  padding: 8px;
-  border-radius: 5px;
-  letter-spacing: 0.03em;
+  margin: 12px 0;
 }
 
 .programming-languages {
