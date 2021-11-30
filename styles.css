@@ -398,13 +398,26 @@ hr {
   font-style: normal;
 }
 
+.footer {
+  background-color: #fff;
+}
+
+.contact-me {
+  border-top-left-radius: 100px; 
+  background-color: #6070ff;
+  background-image: url('./img/contact-form-shapes-mobile@2x.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100% 100%;
+  min-height: 700px;
+}
+
 .contact-me-header {
   text-align: center;
 }
 
 .input-list {
   list-style-type: none;
-  margin: 0 24px;
+  margin: 60px 24px 0 24px;
   padding: 0;
 }
 
@@ -437,6 +450,7 @@ hr {
   line-height: 52px;
 }
 
-.footer {
-  background-color: #6070ff;
+.contact-description {
+  color: #fff;
+  margin: 0 24px;
 }

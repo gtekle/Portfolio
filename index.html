@@ -337,10 +337,10 @@
         <form action="#" method="post">
           <ul class="input-list">
             <li>
-              <input placeholder="name" type="text" id="name" name="name" />
+              <input placeholder="name" type="text" id="name" name="name" minlength="2" maxlength="30" required/>
             </li>
             <li>
-              <input placeholder="email" type="email" name="email" id="email" />
+              <input placeholder="email" type="email" name="email" id="email" required/>
             </li>
             <li>
               <textarea
@@ -349,6 +349,7 @@
                 id="message"
                 cols="30"
                 rows="10"
+                maxlength="500"
               ></textarea>
             </li>
             <li>
