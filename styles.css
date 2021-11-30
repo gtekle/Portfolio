@@ -232,7 +232,7 @@ img {
   margin-right: 10px;
 }
 
-.card .project-description {
+.card .project-description, .contact-description {
   color: #344563;
   font-size: 15px;
   line-height: 24px;
@@ -396,4 +396,47 @@ hr {
   line-height: 24px;
   font-weight: 500;
   font-style: normal;
+}
+
+.contact-me-header {
+  text-align: center;
+}
+
+.input-list {
+  list-style-type: none;
+  margin: 0 24px;
+  padding: 0;
+}
+
+.contact-me input, .contact-me textarea {
+  width: 100%;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  background-color: #ffffffff;
+  height: 48px;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 400;
+  padding: 15px 16px;
+}
+
+.contact-me textarea {
+  height: 170px;
+}
+
+.input-list li {
+  margin: 20px 0;
+}
+
+.footer .section-title {
+  margin: 0;
+  padding-top: 103px;
+  padding-bottom: 12px;
+  color: #ffffffff;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.footer {
+  background-color: #6070ff;
 }
