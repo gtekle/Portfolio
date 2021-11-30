@@ -327,36 +327,51 @@
       </div>
     </section>
     <footer class="footer">
-      <div class="contact-me">
-        <div class="contact-me-header">
-          <h2 class="section-title">Contact me</h2>
-          <p class="contact-description">
-            If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it 
-          </p>
+      <div class="wrapper">
+        <div class="contact-me container">
+          <div class="contact-me-header">
+            <h2 class="contact-title">Contact me</h2>
+            <p class="contact-intro">
+              If you have an application you are interested in developing, a
+              feature that you need built or a project that needs coding. I’d
+              love to help with it
+            </p>
+          </div>
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/mqknzgky"
+            method="post"
+          >
+            <input
+              placeholder="John"
+              type="text"
+              id="name"
+              name="name"
+              minlength="2"
+              maxlength="30"
+              required
+            />
+            <input
+              placeholder="john@domain.com"
+              type="email"
+              name="email"
+              id="email"
+              required
+            />
+            <textarea
+              placeholder="write your message here..."
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              maxlength="500"
+            ></textarea>
+            <button class="btn contact-form-submit" type="submit">
+              Get In Touch
+            </button>
+          </form>
         </div>
-        <form action="#" method="post">
-          <ul class="input-list">
-            <li>
-              <input placeholder="name" type="text" id="name" name="name" minlength="2" maxlength="30" required/>
-            </li>
-            <li>
-              <input placeholder="email" type="email" name="email" id="email" required/>
-            </li>
-            <li>
-              <textarea
-                placeholder="please enter your message here..."
-                name="message"
-                id="message"
-                cols="30"
-                rows="10"
-                maxlength="500"
-              ></textarea>
-            </li>
-            <li>
-              <button class="btn" type="submit">Get In Touch</button>
-            </li>
-          </ul>
-        </form>
+        <hr />
       </div>
     </footer>
   </body>

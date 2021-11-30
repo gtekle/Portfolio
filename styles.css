@@ -232,7 +232,8 @@ img {
   margin-right: 10px;
 }
 
-.card .project-description, .contact-description {
+.card .project-description,
+.contact-description {
   color: #344563;
   font-size: 15px;
   line-height: 24px;
@@ -400,57 +401,91 @@ hr {
 
 .footer {
   background-color: #fff;
+  padding-top: 23px;
+}
+
+.footer .wrapper {
+  border-top-left-radius: 100px;
+  background-color: #6070ff;
+  padding-bottom: 102px;
 }
 
 .contact-me {
-  border-top-left-radius: 100px; 
+  border-top-left-radius: 100px;
   background-color: #6070ff;
-  background-image: url('./img/contact-form-shapes-mobile@2x.png');
+  background-image: url("./img/contact-form-shapes-mobile.png");
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-size: 100% 100% 100%;
-  min-height: 700px;
+  padding: 60px 0;
 }
 
 .contact-me-header {
-  text-align: center;
+  text-align: left;
+  padding: 0 24px;
 }
 
-.input-list {
-  list-style-type: none;
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 60px 24px 0 24px;
-  padding: 0;
 }
 
-.contact-me input, .contact-me textarea {
+.contact-me input,
+.contact-me textarea {
   width: 100%;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
-  background-color: #ffffffff;
+  background-color: #fff;
   height: 48px;
   font-size: 17px;
   line-height: 20px;
   font-weight: 400;
   padding: 15px 16px;
+  margin: 10px 0;
+}
+
+.contact-form input::placeholder {
+  color: #172b4d;
+  font-size: 17px;
+  line-height: 20px;
 }
 
 .contact-me textarea {
   height: 170px;
+  border-radius: 8px;
 }
 
-.input-list li {
-  margin: 20px 0;
-}
-
-.footer .section-title {
-  margin: 0;
-  padding-top: 103px;
-  padding-bottom: 12px;
-  color: #ffffffff;
+.contact-title {
+  padding: 0;
+  color: #fff;
   font-size: 40px;
   line-height: 52px;
 }
 
-.contact-description {
+.contact-intro {
   color: #fff;
-  margin: 0 24px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.contact-form-submit {
+  align-self: flex-start;
+  background: #fff;
+  border-radius: 8px;
+  align-items: center;
+  padding: 12px 16px;
+  margin: 12px 0;
+}
+
+.footer hr {
+  position: relative;
+  top: 80px;
+  width: 134px;
+  height: 5px;
+  margin-left: calc(50% - 134px / 2 - 0.5px);
+  text-align: center;
+  background-color: #0d151e;
+  margin-bottom: 8px;
 }
