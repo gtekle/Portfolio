@@ -12,16 +12,14 @@ This is project will evolve into becoming my portfolio as the course progresses.
 
 - HTML and CSS
 
-
 ## Live Demo
 
-[Live Demo Link](#)
+[Live Demo Link](https://gtekle.github.io/Portfolio/)
 
 ## Getting Started
 
 -Install Node.js
 -Install text editor of your choice (eg. VS Code)
-
 
 ## Authors
 
