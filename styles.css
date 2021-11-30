@@ -203,14 +203,12 @@ img {
 }
 
 .card .project-metadata {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
   list-style: none;
   padding: 0;
 }
 
 .card .project-metadata li {
+  float: left;
   margin-right: 20px;
 }
 
