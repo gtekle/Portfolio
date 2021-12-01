@@ -501,9 +501,12 @@ hr {
 @media screen and (min-width: 780px) {
   .header {
     background-color: #fff;
+    border-radius: 0 0 0 120px;
   }
 
   .toolbar {
+    box-sizing: border-box;
+    background-color: #fff;
     padding: 0 150px;
     height: 27px;
   }
@@ -514,7 +517,6 @@ hr {
 
   .nav-list {
     display: flex;
-    /* justify-content: space-around; */
     align-items: center;
     list-style: none;
     padding: 0;
@@ -573,5 +575,26 @@ hr {
   .headline .social-media {
     margin-bottom: 12px;
     margin-top: 12px;
+  }
+
+  .works .grid-container {
+    margin-top: -34px;
+  }
+
+  .works .section-title {
+    text-align: center;
+  }
+
+  .card {
+    flex-direction: row;
+    margin: 71px 142px;
+  }
+
+  .card > * {
+    margin: 24px;
+  }
+
+  .card:nth-child(odd) .project-snapshoot {
+    order: 2;
   }
 }
