@@ -40,7 +40,6 @@ img {
 }
 
 .btn {
-  text-decoration: none;
   font-size: 17px;
   line-height: 24px;
   font-weight: 600;
@@ -108,7 +107,15 @@ img {
   color: #6070ff;
 }
 
-.headline .container {
+.nav-list {
+  display: none;
+}
+
+.header {
+  background-color: #f7f7f9;
+}
+
+.headline {
   flex-direction: column;
   justify-content: center;
   background-image: url("./img/header-shapes-mobile.png");
@@ -424,6 +431,20 @@ hr {
   padding: 0 24px;
 }
 
+.contact-title {
+  padding: 0;
+  color: #fff;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.contact-intro {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -456,20 +477,6 @@ hr {
   border-radius: 8px;
 }
 
-.contact-title {
-  padding: 0;
-  color: #fff;
-  font-size: 40px;
-  line-height: 52px;
-}
-
-.contact-intro {
-  color: #fff;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 28px;
-}
-
 .contact-form-submit {
   align-self: flex-start;
   background: #fff;
@@ -488,4 +495,184 @@ hr {
   text-align: center;
   background-color: #0d151e;
   margin-bottom: 8px;
+}
+
+@media screen and (min-width: 992px) {
+  .header {
+    background-color: #f7f7f9;
+  }
+
+  .header-wrapper {
+    background-color: #fff;
+    border-radius: 0 0 0 120px;
+  }
+
+  .toolbar {
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 0 150px;
+    height: 27px;
+  }
+
+  .toolbar .btn-menu-toggle {
+    display: none;
+  }
+
+  .nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin-right: 142px;
+  }
+
+  .nav-link a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: #344563;
+    text-align: center;
+  }
+
+  .nav-link + .nav-link {
+    margin-left: 20px;
+  }
+
+  .headline {
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    background-image: url("./img/desktop-header-background.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    max-width: 1398px;
+    padding: 34px 8px;
+    min-height: 721px;
+  }
+
+  .headline--container {
+    margin: 0 225px;
+    letter-spacing: 0.37px;
+  }
+
+  .headline--title {
+    margin-bottom: 12px;
+    color: #091e42;
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .headline--body {
+    max-width: 920px;
+    margin-bottom: 12px;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+  }
+
+  .headline--supporting-text {
+    margin-bottom: 12px;
+    margin-top: 12px;
+  }
+
+  .headline .social-media {
+    margin-bottom: 12px;
+    margin-top: 12px;
+  }
+
+  .works .section-title {
+    text-align: center;
+  }
+
+  .card {
+    flex-direction: row;
+    margin: 71px 142px;
+  }
+
+  .card > * {
+    margin: 24px;
+  }
+
+  .card:nth-child(odd) .project-snapshoot {
+    order: 2;
+  }
+
+  .about-me-container {
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 0 120px 0 0;
+    padding: 71px 185px;
+  }
+
+  .about-me-container .about-me-header {
+    width: 36%;
+    margin-right: 15px;
+  }
+
+  .about-me-container .about-me-skillset {
+    width: calc(54% - 25px);
+  }
+
+  .about-me-container .about-me-skillset .language-list {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff;
+  }
+
+  .about-me-skillset .language-list .language-item {
+    flex-direction: column;
+    text-align: center;
+    margin: 0 12px;
+  }
+
+  .about-me-skillset .language-list li + li {
+    margin-left: 12px;
+  }
+
+  .contact-me {
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 100px;
+    background-color: #6070ff;
+    background-image: url("./img/desktop-version-contact-form-background.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    align-items: center;
+  }
+
+  .contact-me .contact-me-header {
+    text-align: center;
+  }
+
+  .contact-me-header .contact-title,
+  .contact-intro {
+    max-width: 569px;
+    margin-bottom: 12px;
+  }
+
+  .contact-me-header .contact-intro {
+    padding-bottom: 12px;
+  }
+
+  .contact-me .contact-form {
+    max-width: 447px;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 225px;
+  }
+
+  .contact-me .contact-form input,
+  textarea {
+    margin-bottom: 27px;
+  }
+
+  .contact-form .contact-form-submit {
+    align-self: center;
+  }
+
+  .footer hr {
+    display: none;
+  }
 }

@@ -20,30 +20,40 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header class="toolbar">
-      <div class="container flex-container">
-        <div class="logo">
-          <a href="./index.html" class="logo-link">TG</a>
+    <header class="header">
+      <div class="header-wrapper">
+        <div class="toolbar">
+          <div class="container flex-container">
+            <div class="logo">
+              <a href="./index.html" class="logo-link">TG</a>
+            </div>
+            <nav class="nav-menu">
+              <a href="#" class="btn-menu-toggle"
+                ><i class="fas fa-bars"></i
+              ></a>
+              <ul class="nav-list">
+                <li class="nav-link"><a href="#works">Portfolio</a></li>
+                <li class="nav-link"><a href="#about-me">About</a></li>
+                <li class="nav-link"><a href="#contact-me">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
-        <nav class="nav-menu">
-          <a href="#" class="btn-menu-toggle"><i class="fas fa-bars"></i></a>
-        </nav>
-      </div>
-    </header>
-
-    <section class="headline">
-      <div class="wrapper">
-        <div class="container flex-container">
-          <h1 class="headline--title">I’m Tekle</h1>
-          <h2 class="headline--title subtitle">Glad to see you!</h2>
-          <p class="headline--body">
+        <div class="headline flex-container">
+          <h1 class="headline--title headline--container">
+            I’m Tekle<br />
+            Glad to see you!
+          </h1>
+          <p class="headline--body headline--container">
             I’m a software developer! I can help you build a product , feature
             or website Look through some of my work and experience! If you like
             what you see and have a project you need coded, don’t hestiate to
             contact me.
           </p>
-          <h3 class="headline--supporting-text">Let's connect</h3>
-          <ul class="social-media">
+          <h3 class="headline--supporting-text headline--container">
+            Let's connect
+          </h3>
+          <ul class="social-media headline--container">
             <li class="social-meida__list-item">
               <a
                 href="https://twitter.com/teklegyohannes"
@@ -81,9 +91,9 @@
           </ul>
         </div>
       </div>
-    </section>
+    </header>
 
-    <section class="works">
+    <section id="works" class="works">
       <div class="container grid-container">
         <h2 class="section-title">Projects</h2>
         <article class="card">
@@ -217,7 +227,7 @@
       </div>
     </section>
 
-    <section class="about-me">
+    <section id="about-me" class="about-me">
       <div class="about-me-wrapper container">
         <div class="about-me-container">
           <div class="about-me-header">
@@ -326,12 +336,13 @@
         </div>
       </div>
     </section>
+
     <footer class="footer">
       <div class="wrapper">
-        <div class="contact-me container">
+        <div id="contact-me" class="contact-me container">
           <div class="contact-me-header">
-            <h2 class="contact-title">Contact me</h2>
-            <p class="contact-intro">
+            <h2 class="contact-title headline--container">Contact me</h2>
+            <p class="contact-intro headline--container">
               If you have an application you are interested in developing, a
               feature that you need built or a project that needs coding. I’d
               love to help with it
