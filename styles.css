@@ -76,7 +76,11 @@ img {
 }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     transform: translateY(0);
   }
 
@@ -97,12 +101,12 @@ img {
   text-transform: uppercase;
 }
 
-.toolbar {
-  color: #6070ff;
+.header {
+  background-color: #f7f7f9;
 }
 
-.headline .wrapper {
-  background-color: #f7f7f9;
+.toolbar {
+  color: #6070ff;
 }
 
 .toolbar .container {
@@ -113,18 +117,17 @@ img {
 }
 
 .logo {
-  padding: 10px 12px;
+  padding: 0 12px;
+  margin-left: 12px;
+  margin-bottom: -20px;
 }
 
 .rotate-arround-logo {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  position: absolute;
-  background: linear-gradient(to right, transparent 98%, rgba(28,19,185,1) 2%); 
+  background: linear-gradient(to right, transparent 98%, rgba(28, 19, 185) 2%);
   animation: spin 2s infinite linear;
-  top: 1.5%;
-  left: 4%;
 }
 
 @keyframes spin {
@@ -135,6 +138,13 @@ img {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.logo-link {
+  margin-top: 10px;
+  position: relative;
+  top: -35px;
+  margin-left: 13px;
 }
 
 .logo a {
@@ -150,7 +160,7 @@ img {
   display: none;
 }
 
-.header {
+.headline .wrapper {
   background-color: #f7f7f9;
 }
 
@@ -575,6 +585,17 @@ hr {
 
   .nav-link + .nav-link {
     margin-left: 20px;
+  }
+
+  .nav-link:hover {
+    background-color: #2230d2;
+    border-radius: 10px;
+    transition: all 0.5s ease-in;
+    padding: 0 5px;
+  }
+
+  .nav-link a:hover {
+    color: #fff;
   }
 
   .headline {
