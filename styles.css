@@ -98,6 +98,27 @@ img {
   padding: 10px 12px;
 }
 
+.rotate-arround-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  background: linear-gradient(to right, transparent 98%, rgba(28,19,185,1) 2%); 
+  animation: spin 2s infinite linear;
+  top: 1.5%;
+  left: 4%;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .logo a {
   text-decoration: none;
   font-style: normal;
