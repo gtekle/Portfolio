@@ -2,11 +2,11 @@
 
 # Portfolio
 
-> My portfolio project.
+> My portfolio
 
 ![screenshot](./img/portfolio-screenshot.png)
 
-This is project will evolve into becoming my portfolio as the course progresses.
+This project will evolve to become my portfolio as the course progresses.
 
 ## Built With
 
