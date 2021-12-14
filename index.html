@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tekle's Portfolio</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -11,14 +15,9 @@
       function gtag() {
         window.dataLayer.push(arguments);
       }
-      gtag("js", new Date());
-      gtag("config", "G-S9F42FW2CY");
+      gtag('js', new Date());
+      gtag('config', 'G-S9F42FW2CY');
     </script>
-
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tekle's Portfolio</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
@@ -42,14 +41,28 @@
               <div class="rotate-arround-logo"></div>
               <a href="./index.html" class="logo-link">TG</a>
             </div>
+            <!-- Desktop nav -->
             <nav class="nav-menu">
-              <a href="#" class="btn-menu-toggle"
-                ><i class="fas fa-bars"></i
-              ></a>
+              <a href="#" class="btn-menu-toggle">
+                <i class="fas fa-bars"></i>
+              </a>
               <ul class="nav-list">
                 <li class="nav-link"><a href="#works">Portfolio</a></li>
                 <li class="nav-link"><a href="#about-me">About</a></li>
                 <li class="nav-link"><a href="#contact-me">Contact</a></li>
+              </ul>
+            </nav>
+            <!-- mobile nav -->
+            <nav class="mobile-nav-menu">
+              <a href="#" class="btn-menu-close">
+                <i class="fas fa-times"></i>
+              </a>
+              <ul class="mobile-nav-list">
+                <li class="mobile-nav-link"><a href="#works">Portfolio</a></li>
+                <li class="mobile-nav-link"><a href="#about-me">About</a></li>
+                <li class="mobile-nav-link">
+                  <a href="#contact-me">Contact</a>
+                </li>
               </ul>
             </nav>
           </div>
@@ -400,5 +413,7 @@
         <hr />
       </div>
     </footer>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>
