@@ -164,6 +164,49 @@ img {
   background-color: #f7f7f9;
 }
 
+.mobile-nav-menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(11, 40, 200, 0.65);
+  backdrop-filter: blur(5px);
+  z-index: 30;
+}
+
+.mobile-nav-menu .btn-menu-close {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  color: #fff;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.mobile-nav-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-top: 10%;
+}
+
+.mobile-nav-list .mobile-nav-link {
+  padding: 10px 0;
+}
+
+.mobile-nav-list .mobile-nav-link a {
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.mobile-nav-list .mobile-nav-link a:hover {
+  color: #aaa;
+}
+
 .headline {
   flex-direction: column;
   justify-content: center;
