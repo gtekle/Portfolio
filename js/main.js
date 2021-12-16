@@ -124,3 +124,102 @@ technologyListArray.forEach((projectTechnologyList, index) => {
     return 0;
   });
 });
+
+function createModal(index) {
+  const modalOverlay = document.createElement('div');
+  modalOverlay.className = 'modal-overlay';
+  modalOverlay.innerHTML = `<div class="modal">
+             <a id="modal-close-icon" href="#" class="btn-modal-close">
+                <i class="fas fa-times"></i>
+              </a>
+            <h3 class="project-title" id="project-title">${projects[index].title}</h3>
+
+            <div class="modal-header">
+              <h3 class="project-client" id="project-client">${projects[index].client}</h3>
+              <ul class="role-year-ul">
+                <li class="project-role" id="project-role">${projects[index].role}</li>
+                <li class="project-year" id="project-year">${projects[index].year}</li>
+              </ul>
+            </div>
+            <div class="featured-image-container">
+              <img
+                id="project-snapshot"
+                class="featured-image"
+                src=${projects[index].featuredImage}
+                alt="${projects[index].title} project featured image"
+              />
+            </div>
+            <div class="project-details">
+              <div class="project-description-div">
+                <p class="modal-description" id="project-description">
+                  ${projects[index].description}
+                </p>
+              </div>
+              <div class="technologies-buttons">
+                <div>
+                  <ul class="project-modal-technologies languages" id="project-technologies"></ul>
+                </div>
+                <div class="modal-see-btn">
+                
+                  <button class="btn project-live" id="project-live">
+                    <a href=${projects[index].livelink}>
+                      See live 
+                      <i class="fas fa-external-link-alt"></i> 
+                    </a>
+                  </button>
+
+                  <button class="btn project-source" id="project-source">
+                  <a href=${projects[index].sourcelink}>
+                      See Source
+                      <i class="fab fa-github"></i>
+                    </a>                    
+                  </button>
+                </div>
+              </div>
+            </div>`;
+  worksContainer.appendChild(modalOverlay);
+}
+
+function populateModalTechnologyList(index) {
+  const modalTechnology = document.querySelector('.project-modal-technologies');
+  let listItem;
+
+  projects[index].technologies.map((technology) => {
+    listItem = document.createElement('li');
+    listItem.innerHTML = `<span>${technology}</span>`;
+    modalTechnology.appendChild(listItem);
+    return 0;
+  });
+}
+
+function isCloseButtonClicked(modalCover) {
+  if (modalCover.style.display === 'block') {
+    const modalCloseButton = document.querySelector('#modal-close-icon');
+    const modalTechnology = document.querySelector(
+      '.project-modal-technologies'
+    );
+
+    modalCloseButton.addEventListener('click', () => {
+      modalCover.style.display = 'none';
+      modalTechnology.innerHTML = '';
+      body.style.overflow = '';
+      worksContainer.removeChild(modalCover);
+    });
+  }
+}
+
+const seeProjectBtns = document.querySelectorAll('.btn-see-project');
+
+seeProjectBtns.forEach((seeProjectBtn) => {
+  seeProjectBtn.addEventListener('click', () => {
+    const projectId = seeProjectBtn.id;
+    const index = parseInt(projectId.substring(projectId.length - 1), 10) - 1;
+    createModal(index);
+
+    const modalCover = document.querySelector('.modal-overlay');
+    modalCover.style.display = 'block';
+    populateModalTechnologyList(index);
+    isCloseButtonClicked(modalCover);
+    body.style.overflow = 'hidden';
+  });
+});
