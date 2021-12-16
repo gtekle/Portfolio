@@ -82,7 +82,7 @@ worksContainer.appendChild(sectionHeading);
 
 projects.forEach((project, index) => {
   const newIndex = index + 1;
-  const projectId = 'project${newIndex}';
+  const projectId = `project${newIndex}`;
   const card = document.createElement('article');
   card.className = 'card';
   card.innerHTML = `<div class="project-snapshoot">
@@ -103,7 +103,7 @@ projects.forEach((project, index) => {
             <p class="project-description">
               ${project.description}
             </p>
-            <ul class="languages">
+            <ul class="languages project-technologies">
             </ul>
             <button id=${projectId} class="btn btn-see-project" type="button">
               See Project
@@ -112,7 +112,7 @@ projects.forEach((project, index) => {
   worksContainer.appendChild(card);
 });
 
-const technologyList = document.querySelectorAll('.languages');
+const technologyList = document.querySelectorAll('.project-technologies');
 const technologyListArray = Array.from(technologyList);
 
 technologyListArray.forEach((projectTechnologyList, index) => {
@@ -160,16 +160,15 @@ function createModal(index) {
                   <ul class="project-modal-technologies languages" id="project-technologies"></ul>
                 </div>
                 <div class="modal-see-btn">
-                
                   <button class="btn project-live" id="project-live">
-                    <a href=${projects[index].livelink}>
+                    <a class="modal-link" href=${projects[index].livelink}>
                       See live 
                       <i class="fas fa-external-link-alt"></i> 
                     </a>
                   </button>
 
                   <button class="btn project-source" id="project-source">
-                  <a href=${projects[index].sourcelink}>
+                  <a class="modal-link" href=${projects[index].sourcelink}>
                       See Source
                       <i class="fab fa-github"></i>
                     </a>                    
@@ -196,9 +195,8 @@ function isCloseButtonClicked(modalCover) {
   if (modalCover.style.display === 'block') {
     const modalCloseButton = document.querySelector('#modal-close-icon');
     const modalTechnology = document.querySelector(
-      '.project-modal-technologies'
+      '.project-modal-technologies',
     );
-
     modalCloseButton.addEventListener('click', () => {
       modalCover.style.display = 'none';
       modalTechnology.innerHTML = '';
@@ -215,7 +213,6 @@ seeProjectBtns.forEach((seeProjectBtn) => {
     const projectId = seeProjectBtn.id;
     const index = parseInt(projectId.substring(projectId.length - 1), 10) - 1;
     createModal(index);
-
     const modalCover = document.querySelector('.modal-overlay');
     modalCover.style.display = 'block';
     populateModalTechnologyList(index);

@@ -363,8 +363,6 @@ img {
   align-self: flex-start;
 }
 
-/* Modal mobile */
-
 .modal-overlay {
   position: fixed;
   display: none;
@@ -385,8 +383,8 @@ img {
   align-items: flex-start;
   position: relative;
   margin: 6px auto;
-  max-width: 90vw;
-  height: 95vh;
+  width: auto;
+  height: 100vh;
   background-color: #fff;
   border-radius: 10px;
   padding: 8px 16px;
@@ -450,18 +448,13 @@ img {
   margin-left: 32px;
 }
 
-.modal .featured-image-container {
-  width: 90%;
-  max-height: 60%;
-}
-
 .modal .featured-image {
   width: 100%;
   max-height: 100%;
 }
 
 .modal .project-description-div {
-  max-height: 80px;
+  max-height: 40%;
   overflow: hidden;
 }
 
@@ -508,7 +501,7 @@ img {
   width: 100%;
 }
 
-.modal .modal-see-btn a {
+.modal .modal-see-btn .modal-link {
   text-decoration: none;
   color: #6070ff;
 }
@@ -860,15 +853,16 @@ hr {
 
   .modal-overlay {
     margin: 0 auto;
+    height: 100%;
   }
 
   .modal {
     max-width: 1150px;
-    height: 95vh;
+    height: 100%;
     margin: 12px auto;
     padding-top: 20px;
-    padding-right: 16px;
-    padding-left: 16px;
+    padding-right: 32px;
+    padding-left: 32px;
     padding-bottom: 20px;
   }
 
@@ -876,14 +870,29 @@ hr {
     justify-content: flex-start;
   }
 
-  .modal .project-client,
-  .project-role,
+  .modal .project-client {
+    font-size: 18px;
+  }
+
+  .modal .project-role,
   .project-year {
     font-size: 18px;
   }
 
   .modal .modal-header .project-client {
     margin-right: 28px;
+  }
+
+  .modal .featured-image-container {
+    width: 100%;
+    height: 65%;
+    border-radius: 30px;
+  }
+
+  .modal .featured-image {
+    width: 100%;
+    max-height: 100%;
+    border-radius: 30px;
   }
 
   .modal .project-details {
@@ -895,8 +904,6 @@ hr {
 
   .modal .project-description-div {
     flex: 2;
-    max-height: 75%;
-    overflow: hidden;
   }
 
   .modal .technologies-buttons {
