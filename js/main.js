@@ -195,7 +195,7 @@ function isCloseButtonClicked(modalCover) {
   if (modalCover.style.display === 'block') {
     const modalCloseButton = document.querySelector('#modal-close-icon');
     const modalTechnology = document.querySelector(
-      '.project-modal-technologies',
+      '.project-modal-technologies'
     );
     modalCloseButton.addEventListener('click', () => {
       modalCover.style.display = 'none';
@@ -219,4 +219,37 @@ seeProjectBtns.forEach((seeProjectBtn) => {
     isCloseButtonClicked(modalCover);
     body.style.overflow = 'hidden';
   });
+});
+
+const form = document.querySelector('.contact-form');
+const labelError = document.querySelector('.error-messages');
+
+const EMAIL_INVALID = 'Email address should be written in lower case';
+
+function validateEmail(email) {
+  let emailValue = email.value.trim();
+  const emailRegex = /^[a-z0-9\._%+-]+@[a-z0-9\.-]+\.[a-z]{2,4}$/;
+
+  if (!emailRegex.test(emailValue)) {
+    return false;
+  }
+
+  return true;
+}
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const { email } = form.elements;
+  let isValidEmail = validateEmail(email);
+
+  if (isValidEmail) {
+    console.log('Email is valid lower case letters');
+    labelError.style.display = 'none';
+    form.submit();
+  } else {
+    console.log(EMAIL_INVALID);
+    labelError.display = 'block';
+    labelError.textContent = EMAIL_INVALID + '!\n';
+  }
 });
