@@ -12,7 +12,7 @@ body {
   margin: 0;
   background-color: #e5e5e5;
   font-size: 1rem;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 img {
@@ -210,7 +210,7 @@ img {
 .headline {
   flex-direction: column;
   justify-content: center;
-  background-image: url("./img/header-shapes-mobile.png");
+  background-image: url('./img/header-shapes-mobile.png');
   border-radius: 0 0 0 120px;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -271,6 +271,7 @@ img {
 
 .card {
   display: flex;
+  max-width: 100%;
   flex-direction: column;
   justify-content: space-between;
   margin: 44px 0;
@@ -291,11 +292,12 @@ img {
 }
 
 .card .project-title {
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 44px;
+  line-height: 30px;
   color: #172b4d;
   padding: 0;
+  margin: 0;
 }
 
 .card .project-metadata {
@@ -306,13 +308,9 @@ img {
   padding: 0;
 }
 
-.card .project-metadata li {
-  margin-right: 20px;
-}
-
 .card .project-metadata .client {
   color: #344563;
-  font-size: 16px;
+  font-size: 10px;
   font-weight: 600;
   line-height: 16px;
   text-transform: uppercase;
@@ -321,7 +319,7 @@ img {
 .card .project-metadata .role,
 .year {
   color: #7a869a;
-  font-size: 16px;
+  font-size: 10px;
   font-weight: 600;
   line-height: 16px;
   text-transform: capitalize;
@@ -336,13 +334,16 @@ img {
   color: #344563;
   font-size: 15px;
   line-height: 24px;
+  text-align: justify;
   font-weight: 400;
+  max-width: 100%;
 }
 
 .card .languages {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
   list-style: none;
   padding: 0;
 }
@@ -369,7 +370,7 @@ img {
 .about-me-container {
   display: flex;
   flex-direction: column;
-  background-image: url("./img/base-about-me.png.png");
+  background-image: url('./img/base-about-me.png.png');
   border-radius: 0 80px 0 0;
   background-color: #f7f7f9;
   background-repeat: no-repeat;
@@ -512,7 +513,7 @@ hr {
 .contact-me {
   border-top-left-radius: 100px;
   background-color: #6070ff;
-  background-image: url("./img/contact-form-shapes-mobile.png");
+  background-image: url('./img/contact-form-shapes-mobile.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   padding: 60px 0;
@@ -645,7 +646,7 @@ hr {
     flex-direction: column;
     justify-content: center;
     background-color: #fff;
-    background-image: url("./img/desktop-header-background.png");
+    background-image: url('./img/desktop-header-background.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     max-width: 1398px;
@@ -739,7 +740,7 @@ hr {
     flex-direction: column;
     border-top-left-radius: 100px;
     background-color: #6070ff;
-    background-image: url("./img/desktop-version-contact-form-background.png");
+    background-image: url('./img/desktop-version-contact-form-background.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     align-items: center;
