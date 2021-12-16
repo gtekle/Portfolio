@@ -227,8 +227,8 @@ const labelError = document.querySelector('.error-messages');
 const EMAIL_INVALID = 'Email address should be written in lower case';
 
 function validateEmail(email) {
-  let emailValue = email.value.trim();
-  const emailRegex = /^[a-z0-9\._%+-]+@[a-z0-9\.-]+\.[a-z]{2,4}$/;
+  const emailValue = email.value.trim();
+  const emailRegex = /^[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$/;
 
   if (!emailRegex.test(emailValue)) {
     return false;
@@ -241,15 +241,15 @@ form.addEventListener('submit', (event) => {
   event.preventDefault();
 
   const { email } = form.elements;
-  let isValidEmail = validateEmail(email);
+  const isValidEmail = validateEmail(email);
 
   if (isValidEmail) {
-    console.log('Email is valid lower case letters');
+    // console.log('Email is valid lower case letters');
     labelError.style.display = 'none';
     form.submit();
   } else {
-    console.log(EMAIL_INVALID);
+    // console.log(EMAIL_INVALID);
     labelError.display = 'block';
-    labelError.textContent = EMAIL_INVALID + '!\n';
+    labelError.textContent = `${EMAIL_INVALID}!\n`;
   }
 });
