@@ -261,6 +261,10 @@ const contactMessage = {
   message: '',
 };
 
+function populateStorage() {
+  localStorage.setItem('formData', JSON.stringify(contactMessage));
+}
+
 inputElements.forEach((input) => {
   input.addEventListener('change', () => {
     contactMessage[input.name] = form.elements[input.name].value.trim();
