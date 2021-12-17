@@ -195,7 +195,7 @@ function isCloseButtonClicked(modalCover) {
   if (modalCover.style.display === 'block') {
     const modalCloseButton = document.querySelector('#modal-close-icon');
     const modalTechnology = document.querySelector(
-      '.project-modal-technologies',
+      '.project-modal-technologies'
     );
     modalCloseButton.addEventListener('click', () => {
       modalCover.style.display = 'none';
@@ -249,4 +249,21 @@ form.addEventListener('submit', (event) => {
     labelError.style.display = 'block';
     labelError.innerHTML = `${EMAIL_INVALID}!\n`;
   }
+});
+
+// contact form local storage
+
+const inputElements = document.querySelectorAll('.contact-form-input');
+
+const contactMessage = {
+  firstname: '',
+  email: '',
+  message: '',
+};
+
+inputElements.forEach((input) => {
+  input.addEventListener('change', () => {
+    contactMessage[input.name] = form.elements[input.name].value.trim();
+    populateStorage();
+  });
 });
