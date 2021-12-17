@@ -256,7 +256,7 @@ form.addEventListener('submit', (event) => {
 const inputElements = document.querySelectorAll('.contact-form-input');
 
 const contactMessage = {
-  firstname: '',
+  name: '',
   email: '',
   message: '',
 };
@@ -270,4 +270,13 @@ inputElements.forEach((input) => {
     contactMessage[input.name] = form.elements[input.name].value.trim();
     populateStorage();
   });
+});
+
+window.addEventListener('load', () => {
+  const inputElements = document.querySelectorAll('.contact-form-input');
+  if (localStorage.getItem('formData') !== '' || localStorage.getItem('formData') !== null) {
+    inputElements.forEach((input) => {
+      input.value = JSON.parse(localStorage.getItem('formData'))[input.name];
+    });
+  }
 });
