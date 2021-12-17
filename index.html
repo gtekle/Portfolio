@@ -247,6 +247,7 @@
             </p>
           </div>
           <form
+            id="contact-form"
             class="contact-form"
             action="https://formspree.io/f/mqknzgky"
             method="post"
@@ -274,10 +275,16 @@
               cols="30"
               rows="10"
               maxlength="500"
+              required
             ></textarea>
-            <button class="btn contact-form-submit" type="submit">
+            <button
+              type="submit"
+              value="Submit"
+              class="btn contact-form-submit"
+            >
               Get In Touch
             </button>
+            <p class="errors-div"></p>
           </form>
         </div>
         <hr />

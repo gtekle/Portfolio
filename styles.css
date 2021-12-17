@@ -740,6 +740,16 @@ hr {
   margin-bottom: 8px;
 }
 
+.errors-div {
+  color: #dc3545;
+  background-color: #fff;
+  display: none;
+  font-size: 12px;
+  margin-top: 12px;
+  align-self: flex-start;
+  padding: 6px;
+}
+
 @media screen and (min-width: 992px) {
   .header {
     background-color: #f7f7f9;
@@ -997,5 +1007,14 @@ hr {
 
   .footer hr {
     display: none;
+  }
+
+  .errors-div {
+    color: #dc3545;
+    background-color: #fff;
+    display: none;
+    font-size: 12px;
+    margin-top: 12px;
+    align-self: center;
   }
 }
