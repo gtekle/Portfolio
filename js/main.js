@@ -92,16 +92,16 @@ projects.forEach((project, index) => {
             />
           </div>
           <div class="project-detail">
-            <h3 class="project-title">${project.title}</h3>
+            <h3 class="project-title">${projects.title}</h3>
             <ul class="project-metadata">
-              <li class="client">${project.client}</li>
+              <li class="client">${projects.client}</li>
               <li><span class="counter"></span></li>
               <li class="role">${project.role}</li>
               <li><span class="counter"></span></li>
               <li class="year">${project.year}</li>
             </ul>
             <p class="project-description">
-              ${project.description}
+              ${projects.description}
             </p>
             <ul class="languages project-technologies">
             </ul>
