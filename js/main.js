@@ -195,7 +195,7 @@ function isCloseButtonClicked(modalCover) {
   if (modalCover.style.display === 'block') {
     const modalCloseButton = document.querySelector('#modal-close-icon');
     const modalTechnology = document.querySelector(
-      '.project-modal-technologies'
+      '.project-modal-technologies',
     );
     modalCloseButton.addEventListener('click', () => {
       modalCover.style.display = 'none';
@@ -222,8 +222,7 @@ seeProjectBtns.forEach((seeProjectBtn) => {
 });
 
 const form = document.querySelector('.contact-form');
-const labelError = document.querySelector('.error-messages');
-console.log(labelError)
+const labelError = document.querySelector('.errors-div');
 const EMAIL_INVALID = 'Email address should be written in lower case';
 
 function validateEmail(email) {
@@ -247,7 +246,7 @@ form.addEventListener('submit', (event) => {
     labelError.style.display = 'none';
     form.submit();
   } else {
-    labelError.display = 'block';
-    labelError.textContent = `${EMAIL_INVALID}!\n`;
+    labelError.style.display = 'block';
+    labelError.innerHTML = `${EMAIL_INVALID}!\n`;
   }
 });

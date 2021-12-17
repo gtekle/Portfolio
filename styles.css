@@ -729,15 +729,6 @@ hr {
   margin: 12px 0;
 }
 
-/* label .error-messages {
-  color: #dc3545;
-  background-color: #fff;
-  display: none;
-  font-size: 12px;
-  margin-top: 12px;
-  align-self: flex-start;
-} */
-
 .footer hr {
   position: relative;
   top: 80px;
@@ -747,6 +738,16 @@ hr {
   text-align: center;
   background-color: #0d151e;
   margin-bottom: 8px;
+}
+
+.errors-div {
+  color: #dc3545;
+  background-color: #fff;
+  display: none;
+  font-size: 12px;
+  margin-top: 12px;
+  align-self: flex-start;
+  padding: 6px;
 }
 
 @media screen and (min-width: 992px) {
@@ -1006,5 +1007,14 @@ hr {
 
   .footer hr {
     display: none;
+  }
+
+  .errors-div {
+    color: #dc3545;
+    background-color: #fff;
+    display: none;
+    font-size: 12px;
+    margin-top: 12px;
+    align-self: center;
   }
 }
