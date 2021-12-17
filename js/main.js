@@ -18,10 +18,10 @@ const projects = [
     sourcelink: 'https://github.com/gtekle/Portfolio',
   },
   {
-    title: 'Tonic',
-    client: 'canopy',
-    role: 'Back End Dev',
-    year: '2015',
+    title: 'Multi-Post Stories',
+    client: 'Facebook',
+    role: 'Full Stack Dev',
+    year: '2016',
     featuredImage: './img/multi-post-stories-project-snapshot.png',
     description:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
@@ -30,10 +30,10 @@ const projects = [
     sourcelink: 'https://github.com/gtekle/Portfolio',
   },
   {
-    title: 'Tonic',
-    client: 'canopy',
-    role: 'Back End Dev',
-    year: '2015',
+    title: 'Facebook 360',
+    client: 'Facebook',
+    role: 'Full Stack Dev',
+    year: '2017',
     featuredImage: './img/tonic-two-project-snapshot.png',
     description:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
@@ -42,10 +42,10 @@ const projects = [
     sourcelink: 'https://github.com/gtekle/Portfolio',
   },
   {
-    title: 'Tonic',
-    client: 'canopy',
-    role: 'Back End Dev',
-    year: '2015',
+    title: 'Uber Navigation',
+    client: 'Uber',
+    role: 'Full Stack Dev',
+    year: '2018',
     featuredImage: './img/multi-post-stories-two-project-snapshot.png',
     description:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
