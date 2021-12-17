@@ -195,7 +195,7 @@ function isCloseButtonClicked(modalCover) {
   if (modalCover.style.display === 'block') {
     const modalCloseButton = document.querySelector('#modal-close-icon');
     const modalTechnology = document.querySelector(
-      '.project-modal-technologies'
+      '.project-modal-technologies',
     );
     modalCloseButton.addEventListener('click', () => {
       modalCover.style.display = 'none';
