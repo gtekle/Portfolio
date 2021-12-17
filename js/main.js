@@ -250,3 +250,34 @@ form.addEventListener('submit', (event) => {
     labelError.innerHTML = `${EMAIL_INVALID}!\n`;
   }
 });
+
+// contact form local storage
+
+const inputElements = document.querySelectorAll('.contact-form-input');
+
+const contactMessage = {
+  name: '',
+  email: '',
+  message: '',
+};
+
+function populateStorage() {
+  localStorage.setItem('formData', JSON.stringify(contactMessage));
+}
+
+inputElements.forEach((input) => {
+  input.addEventListener('change', () => {
+    contactMessage[input.name] = form.elements[input.name].value.trim();
+    populateStorage();
+  });
+});
+
+window.addEventListener('load', () => {
+  const inputElements = document.querySelectorAll('.contact-form-input');
+  if (localStorage.getItem('formData') !== '' || localStorage.getItem('formData') !== null) {
+    inputElements.forEach((input) => {
+      input.value = JSON.parse(localStorage.getItem('formData'))[input.name];
+      contactMessage[input.name] = input.value;
+    });
+  }
+});
