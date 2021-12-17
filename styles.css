@@ -729,6 +729,15 @@ hr {
   margin: 12px 0;
 }
 
+/* label .error-messages {
+  color: #dc3545;
+  background-color: #fff;
+  display: none;
+  font-size: 12px;
+  margin-top: 12px;
+  align-self: flex-start;
+} */
+
 .footer hr {
   position: relative;
   top: 80px;

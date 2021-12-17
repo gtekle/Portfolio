@@ -223,7 +223,7 @@ seeProjectBtns.forEach((seeProjectBtn) => {
 
 const form = document.querySelector('.contact-form');
 const labelError = document.querySelector('.error-messages');
-
+console.log(labelError)
 const EMAIL_INVALID = 'Email address should be written in lower case';
 
 function validateEmail(email) {
@@ -244,11 +244,9 @@ form.addEventListener('submit', (event) => {
   const isValidEmail = validateEmail(email);
 
   if (isValidEmail) {
-    // console.log('Email is valid lower case letters');
     labelError.style.display = 'none';
     form.submit();
   } else {
-    // console.log(EMAIL_INVALID);
     labelError.display = 'block';
     labelError.textContent = `${EMAIL_INVALID}!\n`;
   }
