@@ -16,7 +16,8 @@ const projects = [
     technologies: ['html', 'css', 'javascript', 'github', 'ruby', 'bootsrap'],
     livelink: 'https://gtekle.github.io/Portfolio/',
     sourcelink: 'https://github.com/gtekle/Portfolio',
-  }, {
+  },
+  {
     title: 'Ashenda Tigrai Celebration 2022',
     client: 'Microverse',
     role: 'Front End Developer',
@@ -26,6 +27,17 @@ const projects = [
     technologies: ['html', 'css', 'javascript'],
     livelink: 'https://gtekle.github.io/Ashenda/',
     sourcelink: 'https://github.com/gtekle/Ashenda',
+  },
+  {
+    title: 'Awesome Books',
+    client: 'Microverse',
+    role: 'Front End Developer',
+    year: '2022',
+    featuredImage: './img/awesome-books-home-desktop-version.png',
+    description: 'In this website you can add awesome books of your choice to the list of books and see the existing ones saved in your localstorage object.',
+    technologies: ['html', 'css', 'javascript'],
+    livelink: 'https://gtekle.github.io/awesome-books/',
+    sourcelink: 'https://github.com/gtekle/awesome-books',
   },
   {
     title: 'Multi-Post Stories',
