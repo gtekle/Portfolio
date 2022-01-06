@@ -16,6 +16,16 @@ const projects = [
     technologies: ['html', 'css', 'javascript', 'github', 'ruby', 'bootsrap'],
     livelink: 'https://gtekle.github.io/Portfolio/',
     sourcelink: 'https://github.com/gtekle/Portfolio',
+  }, {
+    title: 'Ashenda Tigrai Celebration 2022',
+    client: 'Microverse',
+    role: 'Front End Developer',
+    year: '2021',
+    featuredImage: './img/ashenda-project-snapshot-desktop.png',
+    description: 'This website is designed as part of compain for a yearly culutral event that takes places in the northern part of Ethiopia - Ashenda Festival 2022.',
+    technologies: ['html', 'css', 'javascript'],
+    livelink: 'https://gtekle.github.io/Ashenda/',
+    sourcelink: 'https://github.com/gtekle/Ashenda',
   },
   {
     title: 'Multi-Post Stories',
