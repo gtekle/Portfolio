@@ -304,9 +304,9 @@ window.addEventListener('load', () => {
   }
 });
 
-const languageListHead = document.querySelector(".language-head");
-const languageList = document.querySelector("#language-list");
-const languageListIcon = document.querySelector("#languages-show-hide");
+const languageListHead = document.querySelector('.language-head');
+const languageList = document.querySelector('#language-list');
+const languageListIcon = document.querySelector('#languages-show-hide');
 
 languageListHead.addEventListener('click', () => {
   if (languageListIcon.classList.contains('collapse')) {
