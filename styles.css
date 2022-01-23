@@ -607,6 +607,10 @@ hr {
   margin-right: 16px;
 }
 
+.language-item .language-icon img {
+  border-radius: 50%;
+}
+
 .programming-languages .language-item .language-name {
   font-size: 15px;
   font-weight: 500;
