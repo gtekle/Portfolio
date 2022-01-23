@@ -303,3 +303,19 @@ window.addEventListener('load', () => {
     });
   }
 });
+
+const languageListHead = document.querySelector(".language-head");
+const languageList = document.querySelector("#language-list");
+const languageListIcon = document.querySelector("#languages-show-hide");
+
+languageListHead.addEventListener('click', () => {
+  if (languageListIcon.classList.contains('collapse')) {
+    languageList.style.display = 'flex';
+    languageListIcon.innerHTML = '<i class="fas fa-angle-down"></i>';
+    languageListIcon.classList.remove('collapse');
+  } else {
+    languageList.style.display = 'none';
+    languageListIcon.innerHTML = '<i class="fas fa-angle-right"></i>';
+    languageListIcon.classList.add('collapse');
+  }
+});

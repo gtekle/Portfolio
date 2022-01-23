@@ -951,6 +951,10 @@ hr {
     width: calc(54% - 25px);
   }
 
+  .about-me-skillset i {
+    cursor: pointer;
+  }
+
   .about-me-container .about-me-skillset .language-list {
     flex-direction: row;
     justify-content: flex-start;
