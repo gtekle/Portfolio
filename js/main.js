@@ -6,6 +6,18 @@ const body = document.querySelector('body');
 
 const projects = [
   {
+    title: 'MMO Games',
+    client: 'Microverse',
+    role: 'Front-End Developer',
+    year: '2022',
+    featuredImage: './img/mmo-snapshot-desktop.png',
+    description:
+      'MMO Games is a web app, built using vanilla JavaScript, Webpack and ES6 features, notably modules. The project consumes data from the mmo games API using JavaScript async and await fetch API. It is live here for a demo of the project. The user is able to see a list of games. The user is also able to post comments using the InvolvementAPI and view all other comments posted by other users.',
+    technologies: ['html', 'css', 'javascript', 'babel', 'Webpack', 'jest', 'fetch-api'],
+    livelink: 'https://mmo-games.netlify.app/',
+    sourcelink: 'https://github.com/gtekle/mmo-games',
+  },
+  {
     title: 'To Do List',
     client: 'Microverse',
     role: 'Front-End Developer',
@@ -38,42 +50,6 @@ const projects = [
     technologies: ['html', 'css', 'javascript'],
     livelink: 'https://gtekle.github.io/awesome-books/',
     sourcelink: 'https://github.com/gtekle/awesome-books',
-  },
-  {
-    title: 'Multi-Post Stories',
-    client: 'Facebook',
-    role: 'Full Stack Dev',
-    year: '2016',
-    featuredImage: './img/multi-post-stories-project-snapshot.png',
-    description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    technologies: ['html', 'css', 'javascript'],
-    livelink: 'https://gtekle.github.io/Portfolio/',
-    sourcelink: 'https://github.com/gtekle/Portfolio',
-  },
-  {
-    title: 'Facebook 360',
-    client: 'Facebook',
-    role: 'Full Stack Dev',
-    year: '2017',
-    featuredImage: './img/tonic-two-project-snapshot.png',
-    description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    technologies: ['html', 'css', 'javascript'],
-    livelink: 'https://gtekle.github.io/Portfolio/',
-    sourcelink: 'https://github.com/gtekle/Portfolio',
-  },
-  {
-    title: 'Uber Navigation',
-    client: 'Uber',
-    role: 'Full Stack Dev',
-    year: '2018',
-    featuredImage: './img/multi-post-stories-two-project-snapshot.png',
-    description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    technologies: ['html', 'css', 'javascript', 'github'],
-    livelink: 'https://gtekle.github.io/Portfolio/',
-    sourcelink: 'https://github.com/gtekle/Portfolio',
   },
 ];
 
