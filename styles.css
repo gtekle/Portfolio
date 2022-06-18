@@ -592,10 +592,6 @@ hr {
   padding: 0;
 }
 
-.programming-languages .language-list > * {
-  flex: 1;
-}
-
 .programming-languages .language-list li {
   background-color: #f7f7f9;
   margin: 6px 0;
@@ -604,6 +600,7 @@ hr {
 .programming-languages .language-item {
   display: flex;
   justify-content: flex-start;
+  align-items: stretch;
   align-items: center;
 }
 
@@ -613,8 +610,7 @@ hr {
 
 .language-item .language-icon img {
   border-radius: 50%;
-  margin-top: 8px;
-  width: 48px;
+  width: 48px !important;
   height: auto;
 }
 
