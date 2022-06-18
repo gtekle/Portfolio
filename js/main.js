@@ -18,6 +18,18 @@ const projects = [
     sourcelink: 'https://github.com/banlon-jones/booking-appointment-react-frontend',
   },
   {
+    title: 'Qemer Mobile Web App',
+    client: 'Microverse',
+    role: 'Front-Stack Developer',
+    year: '2022',
+    featuredImage: './img/qemer-web-app.png',
+    description:
+      'Qemer is a mobile web application where user can manage their expenses securely and can also categorize expenses into different categories.',
+    technologies: ['Ruby on Rails', 'React', 'Ruby', 'JavaScript', 'React-Bootstrap'],
+    livelink: 'https://qemer-budget-app.herokuapp.com/',
+    sourcelink: 'https://github.com/gtekle/qemer-budget-app',
+  },
+  {
     title: 'MMO Games',
     client: 'Microverse',
     role: 'Front-End Developer',
