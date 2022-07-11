@@ -12,7 +12,7 @@ const projects = [
     year: '2022',
     featuredImage: './img/resorts-booking-app.png',
     description:
-      'The resorts booking web app provides users to see available resorts, reserve resorts, and see own reservations. Users with admin role can also create, update and delete resorts.',
+      'The resorts booking web app enables users to check out available resorts, reserve resorts, and see own resort reservations. Users with admin role can also create, update and delete resorts.',
     technologies: ['Ruby on Rails', 'React', 'Ruby', 'JavaScript', 'React-Bootstrap'],
     livelink: 'https://resorts-booking.netlify.app/',
     sourcelink: 'https://github.com/banlon-jones/booking-appointment-react-frontend',
@@ -24,7 +24,7 @@ const projects = [
     year: '2022',
     featuredImage: './img/qemer-web-app.png',
     description:
-      'Qemer is a mobile web application where user can manage their expenses securely and can also categorize expenses into different categories.',
+      'Qemer is a mobile web application where users can manage their expenses securely and can also categorize expenses into different categories.',
     technologies: ['Ruby on Rails', 'React', 'Ruby', 'JavaScript', 'React-Bootstrap'],
     livelink: 'https://qemer-budget-app.herokuapp.com/',
     sourcelink: 'https://github.com/gtekle/qemer-budget-app',
