@@ -8,7 +8,7 @@ const projects = [
   {
     title: 'Resorts Booking App',
     client: 'Microverse',
-    role: 'Front-Stack Developer',
+    role: 'Full-Stack Developer',
     year: '2022',
     featuredImage: './img/resorts-booking-app.png',
     description:
@@ -20,7 +20,7 @@ const projects = [
   {
     title: 'Qemer Mobile Web App',
     client: 'Microverse',
-    role: 'Front-Stack Developer',
+    role: 'Full-Stack Developer',
     year: '2022',
     featuredImage: './img/qemer-web-app.png',
     description:
