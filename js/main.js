@@ -42,18 +42,6 @@ const projects = [
     sourcelink: 'https://github.com/gtekle/mmo-games',
   },
   {
-    title: 'To Do List',
-    client: 'Personal',
-    role: 'Front-End Developer',
-    year: '2022',
-    featuredImage: './img/todo-list-desktop-v-snapshot.png',
-    description:
-      'To-do list is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. This simple website allows you to do that, and it is built using ES6 and Webpack! CSS3, HTML5, JavaScript (ES6)',
-    technologies: ['html', 'css', 'javascript', 'babel', 'Webpack', 'jest'],
-    livelink: 'https://teks-todo-list.netlify.app/',
-    sourcelink: 'https://github.com/gtekle/todo-list',
-  },
-  {
     title: 'Ashenda Tigrai Celebration 2022',
     client: 'Personal',
     role: 'Front-End Developer',
