@@ -171,14 +171,14 @@ function createModal(index) {
                 </div>
                 <div class="modal-see-btn">
                   <button class="btn project-live" id="project-live">
-                    <a class="modal-link" href=${projects[index].livelink}>
+                    <a class="modal-link" target=”_blank” href=${projects[index].livelink}>
                       See live 
                       <i class="fas fa-external-link-alt"></i> 
                     </a>
                   </button>
 
                   <button class="btn project-source" id="project-source">
-                  <a class="modal-link" href=${projects[index].sourcelink}>
+                  <a class="modal-link" target=”_blank” href=${projects[index].sourcelink}>
                       See Source
                       <i class="fab fa-github"></i>
                     </a>                    
