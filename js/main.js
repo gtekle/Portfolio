@@ -7,7 +7,7 @@ const body = document.querySelector('body');
 const projects = [
   {
     title: 'Resorts Booking App',
-    client: 'Microverse',
+    client: 'Personal',
     role: 'Full-Stack Developer',
     year: '2022',
     featuredImage: './img/resorts-booking-app.png',
@@ -19,7 +19,7 @@ const projects = [
   },
   {
     title: 'Qemer Mobile Web App',
-    client: 'Microverse',
+    client: 'Personal',
     role: 'Full-Stack Developer',
     year: '2022',
     featuredImage: './img/qemer-web-app.png',
@@ -31,7 +31,7 @@ const projects = [
   },
   {
     title: 'MMO Games',
-    client: 'Microverse',
+    client: 'Personal',
     role: 'Front-End Developer',
     year: '2022',
     featuredImage: './img/mmo-snapshot-desktop.png',
@@ -43,7 +43,7 @@ const projects = [
   },
   {
     title: 'To Do List',
-    client: 'Microverse',
+    client: 'Personal',
     role: 'Front-End Developer',
     year: '2022',
     featuredImage: './img/todo-list-desktop-v-snapshot.png',
@@ -55,7 +55,7 @@ const projects = [
   },
   {
     title: 'Ashenda Tigrai Celebration 2022',
-    client: 'Microverse',
+    client: 'Personal',
     role: 'Front-End Developer',
     year: '2021',
     featuredImage: './img/ashenda-project-snapshot-desktop.png',
@@ -66,7 +66,7 @@ const projects = [
   },
   {
     title: 'Awesome Books',
-    client: 'Microverse',
+    client: 'Personal',
     role: 'Front-End Developer',
     year: '2022',
     featuredImage: './img/awesome-books-home-desktop-version.png',
