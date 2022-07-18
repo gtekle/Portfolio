@@ -7,7 +7,7 @@ const body = document.querySelector('body');
 const projects = [
   {
     title: 'Resorts Booking App',
-    client: 'Microverse',
+    client: 'Personal',
     role: 'Full-Stack Developer',
     year: '2022',
     featuredImage: './img/resorts-booking-app.png',
@@ -19,7 +19,7 @@ const projects = [
   },
   {
     title: 'Qemer Mobile Web App',
-    client: 'Microverse',
+    client: 'Personal',
     role: 'Full-Stack Developer',
     year: '2022',
     featuredImage: './img/qemer-web-app.png',
@@ -31,7 +31,7 @@ const projects = [
   },
   {
     title: 'MMO Games',
-    client: 'Microverse',
+    client: 'Personal',
     role: 'Front-End Developer',
     year: '2022',
     featuredImage: './img/mmo-snapshot-desktop.png',
@@ -42,20 +42,8 @@ const projects = [
     sourcelink: 'https://github.com/gtekle/mmo-games',
   },
   {
-    title: 'To Do List',
-    client: 'Microverse',
-    role: 'Front-End Developer',
-    year: '2022',
-    featuredImage: './img/todo-list-desktop-v-snapshot.png',
-    description:
-      'To-do list is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. This simple website allows you to do that, and it is built using ES6 and Webpack! CSS3, HTML5, JavaScript (ES6)',
-    technologies: ['html', 'css', 'javascript', 'babel', 'Webpack', 'jest'],
-    livelink: 'https://teks-todo-list.netlify.app/',
-    sourcelink: 'https://github.com/gtekle/todo-list',
-  },
-  {
     title: 'Ashenda Tigrai Celebration 2022',
-    client: 'Microverse',
+    client: 'Personal',
     role: 'Front-End Developer',
     year: '2021',
     featuredImage: './img/ashenda-project-snapshot-desktop.png',
@@ -66,7 +54,7 @@ const projects = [
   },
   {
     title: 'Awesome Books',
-    client: 'Microverse',
+    client: 'Personal',
     role: 'Front-End Developer',
     year: '2022',
     featuredImage: './img/awesome-books-home-desktop-version.png',
